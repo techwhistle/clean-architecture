@@ -19,6 +19,7 @@ namespace BlogApi.Infrastructure.Persistence
 
             // Register repositories (Scoped = per request)
             services.AddScoped<IPostRepository, PostRepository>();
+            services.AddScoped<ITagRepository, TagRepository>();
 
             return services;
         }

@@ -2,10 +2,7 @@
 
 namespace BlogApi.Application.Interfaces.Repositories;
 
-public interface IPostRepository
+public interface IPostRepository: IBaseRepository<Post>
 {
-    Task<Post?> GetByIdAsync(Guid id);
-    Task AddAsync(Post post);
-    Task UpdateAsync(Post post);
-    Task DeleteAsync(Guid id);
+    // You can add Post-specific methods later, e.g.:
 }
